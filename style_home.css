@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 20%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    gap: 40px;
+}
+
+h1{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #F6F6F6;
+}
+
+p{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #F6F6F6;
+}
+
+.titulo_destaque{
+    color: #22D4FD;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__links__link{
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabeçalho_menu{
+    display: flex;
+    gap: 80px;
+    margin: 24px 40px;
+}
+
+.cabeçalho_menu_link{
+    font-family: "Krona One", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+    text-decoration: none;
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin: 5% 10%;
+        gap: 40px;
+    }
+
+    section {
+        width: 100%;
+        gap: 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .apresentacao__links {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .apresentacao__links__link {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
+    }
+
+    .cabeçalho_menu {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .cabeçalho_menu_link {
+        font-size: 20px;
+    }
+}
